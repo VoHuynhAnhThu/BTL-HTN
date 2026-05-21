@@ -12,7 +12,7 @@ export declare class MoistureRecordsService {
         userId: any;
     }>;
     findAll(query: string, current: number, pageSize: number): Promise<{
-        results: (import("mongoose").Document<unknown, {}, MoistureRecord> & MoistureRecord & {
+        results: (import("mongoose").Document<unknown, {}, MoistureRecord, {}, {}> & MoistureRecord & {
             _id: import("mongoose").Types.ObjectId;
         } & {
             __v: number;
@@ -22,7 +22,7 @@ export declare class MoistureRecordsService {
         current: number;
         pageSize: number;
     }>;
-    findOne(id: string): Promise<(import("mongoose").Document<unknown, {}, MoistureRecord> & MoistureRecord & {
+    findOne(id: string): Promise<(import("mongoose").Document<unknown, {}, MoistureRecord, {}, {}> & MoistureRecord & {
         _id: import("mongoose").Types.ObjectId;
     } & {
         __v: number;

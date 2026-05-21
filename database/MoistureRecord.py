@@ -1,13 +1,13 @@
 from datetime import datetime
 
-class MoistureRecord:
+class humidityRecord:
     user_id: str
-    moisture: float
+    humidity: float
     timestamp: datetime
     
-    def __init__(self, user_id: str, moisture: float, timestamp: datetime = None):
+    def __init__(self, user_id: str, humidity: float, timestamp: datetime = None):
         self.user_id = user_id
-        self.moisture = moisture
+        self.humidity = humidity
         self.timestamp = timestamp if timestamp is not None else datetime.now()
         
     def __str__(self):
